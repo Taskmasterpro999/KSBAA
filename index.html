@@ -71,15 +71,19 @@
     .actions{display:flex; gap:12px; justify-content:center; flex-wrap:wrap}
 
     /* Cards grid */
-    .grid {
+.grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   gap: 24px;
-  padding: 10px 16px;
+  padding: 0 24px;
+  max-width: 1200px;
+  margin: 0 auto;
   box-sizing: border-box;
 }
-    .card {
+
+.card {
   flex: 1 1 420px;
   max-width: 500px;
   background: linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
@@ -92,8 +96,9 @@
   gap: 14px;
   position: relative;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 0;
 }
+
     .card::after{content:''; position:absolute; inset:0; background: radial-gradient(400px 160px at 100% -10%, #ff8de233, transparent 60%)}
     .card h3{margin:0; font-size:1.35rem}
     .card p{margin:0; color:#e9d9ff; opacity:.95}
@@ -148,7 +153,7 @@
   <header>
     <div class="container nav">
       <a class="brand" href="#top">
-        <img src="assets/ksbaa-logo.png" alt="KSBAA logo" onerror="this.style.display='none'">
+        <img src="ksbaa-logo.png" alt="KSBAA logo" onerror="this.style.display='none'">
         <span>KSBAA GAMING AND IT SOLUTIONS PRIVATE LIMITED</span>
       </a>
       <nav class="navlinks" aria-label="Primary">
