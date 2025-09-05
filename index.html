@@ -26,6 +26,16 @@
       --shadow: 0 10px 30px rgba(0,0,0,.35);
       --radius: 20px;
     }
+    .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 18px;
+  justify-content: center; /* center grid items */
+}
+.card {
+  max-width: 520px; /* keep cards balanced */
+  margin: 0 auto;   /* center if only one card in row */
+}
     *{box-sizing:border-box}
     html,body{height:100%}
     body{
